@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>make transparent image</title>
+</head><body>
+<h1>make transparent image</h1>
+<main>
+<input id=inw value=300> x <input id=inh value=200>
+<button id=btnmake>make & copy</button>
+</main>
+<hr>
+<a href=https://github.com/code4fukui/make-transimg>src on GitHub</a>
+
+<script type="module">
+import { makeTransparentCanvas, writeClipboardCanvas } from "./cliputil.js";
+
+btnmake.onclick = async () => {
+  const w = parseInt(inw.value);
+  const h = parseInt(inh.value);
+  const canvas = makeTransparentCanvas(w, h);
+  await writeClipboardCanvas(canvas);
+};
+</script>
+
+<style>
+body {
+  font-family: sans-serif;
+  x-background-color: green;
+  background-color: #f8f8f8;
+}
+main > * {
+  margin: 1em;
+}
+input {
+  width: 5em;
+  font-size: 18px;
+}
+button {
+  font-size: 16px;
+  padding: .5em;  
+}
+a {
+  color: gray !important;
+}
+</style>
+
+<!--
+<br><br>
+<img src=startest.png>
+<img src=startest2.png>
+-->
+
+</body></html>
