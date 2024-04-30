@@ -30,6 +30,22 @@ export const getBlob = async (canvas) => {
     canvas.toBlob(resolve);
   });
 };
+export const readClipboardCanvas = async () => {
+  const clipboardItems = await navigator.clipboard.read();
+  for (const clipboardItem of clipboardItems) {
+    for (const type of clipboardItem.types) {
+      const blob = await clipboardItem.getType(type);
+      const ctype = blob.type;
+      if (ctype == "image/png") {
+        const bin = new Uint8Array(await blob.arrayBuffer());
+        const imgdata = decodePNG(bin);
+        const canvas = toCanvasFromImageData(imgdata);
+        return canvas;
+      }
+    }
+  }
+  return null;
+};
 //
 export const writeClipboardCanvas = async (canvas) => {
   const blob = await getBlob(canvas);
