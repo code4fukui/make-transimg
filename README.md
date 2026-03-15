@@ -1,5 +1,7 @@
 # make-transimg
 
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
 A tool to create transparent images and copy them to the clipboard.
 
 ## Demo
