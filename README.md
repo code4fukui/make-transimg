@@ -16,4 +16,4 @@ https://code4fukui.github.io/make-transimg/
 2. Click the "make & copy" button to generate a transparent image and copy it to the clipboard.
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).

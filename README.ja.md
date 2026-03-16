@@ -1,6 +1,6 @@
 # make-transimg
 
-透明な PNG 画像を簡単に生成できるツールです。
+透明な PNG 画像を簡単に作成できるツールです。
 
 ## デモ
 https://code4fukui.github.io/make-transimg/
