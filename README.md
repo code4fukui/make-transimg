@@ -6,7 +6,7 @@ A simple web tool to generate a fully transparent PNG image of any size and copy
 
 ## Demo
 
-**https://code4fukui.github.io/make-transimg/**
+**https://github.com/code4fukui/make-transimg
 
 The user interface is minimal, consisting of two input fields for width and height and a single "make & copy" button.
 

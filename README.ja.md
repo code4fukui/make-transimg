@@ -4,7 +4,7 @@
 
 ## デモ
 
-**https://code4fukui.github.io/make-transimg/**
+**https://github.com/code4fukui/make-transimg
 
 ユーザーインターフェースは最小限で、幅と高さの2つの入力フィールドと、「make & copy」ボタン1つのみで構成されています。
 
